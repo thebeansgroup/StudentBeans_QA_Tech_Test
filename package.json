@@ -1,0 +1,37 @@
+{
+  "name": "automationtests",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "tests": "wdio ./wdio.conf.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "standard": {
+    "globals": [
+      "it",
+      "jest",
+      "test",
+      "expect",
+      "describe",
+      "beforeEach",
+      "beforeAll",
+      "$",
+      "browser"
+    ]
+  },
+  "devDependencies": {
+    "@wdio/cli": "^6.12.1",
+    "@wdio/cucumber-framework": "^6.11.0",
+    "@wdio/local-runner": "^6.12.1",
+    "@wdio/mocha-framework": "^6.8.0",
+    "@wdio/spec-reporter": "^6.11.0",
+    "@wdio/sync": "^6.11.0",
+    "chai": "4.0.1",
+    "chai-webdriverio": "^1.0.0",
+    "chromedriver": "^89.0.0",
+    "wdio-chromedriver-service": "^6.0.4",
+    "webdriverio": "^6.0.1"
+  }
+}
