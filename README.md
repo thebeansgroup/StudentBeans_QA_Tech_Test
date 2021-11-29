@@ -9,9 +9,9 @@ The framework has already been set up using a page object model(POM) with a pare
 1. Make the scenario that has already been written in simpleSearch.feature run and pass
 &emsp; The first step of the scenario has been done for you to show how we are using the set up
 &emsp;
-2. You will need to create all of the step definitions in the simpleSearchStepDef.js file
+2. You will need to create all of the step definitions in the home.page.steps.js file
 &emsp;
-3. You will also need to create all the corresponding methods in the the simpleSearchPageObject.js (Keep all interactions with the webpage in the page object file)
+3. You will also need to create all the corresponding methods in the the homePage.js (Keep all interactions with the webpage in the page object file)
 
 ### Steps to get started
 

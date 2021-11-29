@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="211c9aee-025a-4c00-b302-c66a2af16257" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/test/features/home.page.feature" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/pages/home.page.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/pages/page.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/features/simpleSearch.feature" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/pageObjects/parentPageObject.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/pageObjects/simpleSearchPageObject.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/stepDefs/simpleSearchStepDef.js" beforeDir="false" afterPath="$PROJECT_DIR$/test/steps/home.page.steps.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wdio.conf.js" beforeDir="false" afterPath="$PROJECT_DIR$/wdio.conf.js" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="21FbinUHWSev2DJmAJKFk5AGGmB" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs.cucumber.cucumber_node_package_dir" value="$PROJECT_DIR$/node_modules/cucumber" />
+    <property name="nodejs_interpreter_path" value="$USER_HOME$/.npm-global/bin/npm" />
+    <property name="settings.editor.selected.configurable" value="preferences.sourceCode.TypeScript" />
+    <property name="ts.external.directory.path" value="$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RunManager">
+    <configuration name="Scenario: As a user I want to search ..." type="cucumber.js" factoryName="Cucumber.js" temporary="true">
+      <option name="myFilePath" value="$PROJECT_DIR$/test/features/simpleSearch.feature" />
+      <option name="myNameFilter" value="^As a user I want to search for a brand on studentbeans\.com so that I can see if I can get a discount on that brand$" />
+      <option name="cucumberJsArguments" value="" />
+      <option name="workingDirectory" value="$PROJECT_DIR$" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Cucumber.js.Scenario: As a user I want to search ..." />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="211c9aee-025a-4c00-b302-c66a2af16257" name="Changes" comment="" />
+      <created>1637539911822</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1637539911822</updated>
+      <workItem from="1637539913871" duration="34033000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+</project>

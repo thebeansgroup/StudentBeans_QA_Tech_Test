@@ -1,0 +1,15 @@
+{
+    "outDir": "./.tsbuild/",
+    "compilerOptions": {
+        "types": [
+            "node", 
+            "webdriverio/async", 
+            "@wdio/cucumber-framework",
+            "@wdio/devtools-service"
+        ]
+    },
+    "include": [
+      "./test/**/*.ts",
+      "./src/types/**/*.ts"
+    ]  
+}
