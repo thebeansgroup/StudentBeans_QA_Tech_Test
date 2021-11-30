@@ -15,7 +15,7 @@ The framework has already been set up using a page object model(POM) with a pare
 
 ### Steps to get started
 
-1. Clone the repo
+1. Fork the repo
 &emsp;
 2. Create your own branch to make your changes
 &emsp;
