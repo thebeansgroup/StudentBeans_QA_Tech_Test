@@ -12,24 +12,26 @@ class simpleSearchPageObject extends ParentPageObject {
 
   verifySearchBarOpening () {
     //clicks accept cookies button
-      const cookies = $('#onetrust-accept-btn-handler').click()
+    const cookies = $('#onetrust-accept-btn-handler').click()
     //finds and clicks the search bar
     const searchBar = $('[name="query"]').click()
-
   }
 
   enterSearchBarText (string) {
     //enters a value into the search modal
-      const input = $("[class=_1g5dvk1]").setValue(string)
-    
+    const input = $("[class=_1g5dvk1]").setValue(string)
   }
 
   verifySearchResults (string) {
     //asserts results relevant to search query are shown, reusing ParentPageObject.js
     this.isElementEqualToExpected($('[class=_63p46ei]'), string)
-    const brand = $('[class=_63p46ei]')
-    brand.click()
-
+  }
+  
+  selectSearchResult(string) {
+    //selects top search result
+    const result = $('[class=_63p46ei]').click()
+    //verifies page is relevant to the brand
+    this.isElementEqualToExpected($('h3=' +string), string) 
   }
 }
 
