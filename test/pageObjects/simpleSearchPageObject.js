@@ -10,9 +10,12 @@ class simpleSearchPageObject extends ParentPageObject {
     this.isElementEqualToExpected($('h2=Recommended For You'), 'Recommended For You')
   }
 
-  verifySearchBarOpening () {
+  acceptCookies (){
     //clicks accept cookies button
     const cookies = $('#onetrust-accept-btn-handler').click()
+  }
+
+  verifySearchBarOpening () {
     //finds and clicks the search bar
     const searchBar = $('[name="query"]').click()
   }

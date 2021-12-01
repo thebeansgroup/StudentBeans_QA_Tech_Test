@@ -6,6 +6,7 @@ const simpleSearchPageObject = new SimpleSearchPageObject()
 Given('I am on the studentbeans homepage', () =>{
   simpleSearchPageObject.goToHomePage()
   simpleSearchPageObject.verifyHomePage()
+  simpleSearchPageObject.acceptCookies()
 })
 
 Given ('I open the search bar', () =>{
