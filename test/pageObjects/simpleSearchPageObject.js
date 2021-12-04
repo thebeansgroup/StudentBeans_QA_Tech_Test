@@ -11,24 +11,23 @@ class simpleSearchPageObject extends ParentPageObject {
     this.isElementEqualToExpected($('h2=Recommended For You'), 'Recommended For You')
   }
 
-  verifySamsung () {
-    this.isElementEqualToExpected($('._63p46ei=Samsung'), 'Samsung')
+  async verifySamsung () {
+    await this.isElementEqualToExpected($('._63p46ei=Samsung'), 'Samsung')
   }
 
-  openSearchBar () {
-    const searchBar = $('._tf5swf')
-    searchBar.click();
-    browser.pause(3000)
+   async openSearchBar () {
+    const searchBar =  await $('._tf5swf')
+    await searchBar.click();
   }
 
-  enterSamsung () {
-    const inputField = $('._1g5dvk1')
-    inputField.setValue('Samsung')
+   async enterSamsung () {
+    const inputField = await $('._1g5dvk1')
+    await inputField.setValue('Samsung')
   }
 
-  acceptCookies() {
-    const accept = $('button=Accept All Cookies')
-    accept.click()
+   async acceptCookies() {
+    const accept =  await $('button=Accept All Cookies')
+    await accept.click()
   }
 }
 
