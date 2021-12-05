@@ -1,3 +1,5 @@
+const { expect } = require("chai")
+
 const TEN_SECOND_TIMEOUT = 10000
 
 class ParentPageObject {
@@ -11,6 +13,14 @@ class ParentPageObject {
       'Text does not match expected'
     )
   }
+
+    isElementClicked(element) {
+        return element.click()
+    }
+
+    isElementVisible(element, expectedResult) {
+        return expect(element).to.exist
+    }
 }
 
 module.exports = ParentPageObject
