@@ -15,12 +15,12 @@ And(‘I open the search bar’, function()
   simpleSearchPageObject.verifySearchBarStartTyping();
 })
 
-When(‘When I enter “Samsung”, function()
+When(‘When I enter “Samsung”, function(string)
 {
  simpleSearchPageObject.enterSearchBar();
 })
 
-Then(‘Then I should be shown a search listing for “Samsung”,function()
+Then(‘Then I should be shown a search listing for “Samsung”,function(string)
 {
  simpleSearchPageObject.displaySamsungList();
 })
