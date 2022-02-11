@@ -2,7 +2,7 @@
 
 ## This repo is set up as a tech test to be used during the QA recruitment process
 
-The framework has already been set up using a page object model(POM) with a parent page object that other page objects inherit from this is representative of the set up we use in our tests within Student Beans
+The framework has already been set up using a page object model(POM) with a parent page object that other page objects inherit from, this is representative of the set up we use in our tests within Student Beans
 
 ### The task for our QA candidates is as followed
 
