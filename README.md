@@ -22,7 +22,8 @@ The framework has already been set up running asynchronously using a page object
     - Use the credentials email: test@test.com password: testingStuff
     - Trigger the user and password error messages
     - Confirm that the error messages display &emsp;
-  **Please write your scenarios in your own appropriately named feature files and create all the needed stepdefs and pageobjects**
+
+**Please write your scenarios in your own appropriately named feature files and create all the needed stepdefs and pageobjects**
 
 ### Steps to get started
 
