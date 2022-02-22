@@ -4,4 +4,5 @@ Scenario: As a user I want to search for a brand on studentbeans.com so that I c
   Given I am on the studentbeans homepage
   And I open the search bar
   When I enter "Samsung"
-  Then I should be shown a search listing for "Samsung"
+  Then I should select the 4th "Samsung" search listing
+

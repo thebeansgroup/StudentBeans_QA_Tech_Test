@@ -1,15 +1,9 @@
-const TEN_SECOND_TIMEOUT = 10000
+const { assert } = require('chai')
 
 class ParentPageObject {
-  isElementEqualToExpected (element, expectedText) {
-    browser.waitUntil(
-      () => {
-        const errorMessage = 'actual does not equal expected'
-        return expect(element.getText(), errorMessage).to.equal(expectedText)
-      },
-      TEN_SECOND_TIMEOUT,
-      'Text does not match expected'
-    )
+  async isElementEqualToExpected (element, expectedText) {
+    const rrorMessage = 'Actual does not match expected'
+    assert(await expect(await element.getText(), errorMessage).to.equal(expectedText))
   }
 }
 
