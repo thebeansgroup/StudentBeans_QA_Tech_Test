@@ -23,6 +23,7 @@ The framework has already been set up running asynchronously using a page object
     - Trigger the user and password error messages
     - Confirm that the error messages display
 &emsp;
+&emsp;
 <strong>Please write your scenarios in your own appropriately named feature files and create all the needed stepdefs and pageobjects</strong>
 
 ### Steps to get started
