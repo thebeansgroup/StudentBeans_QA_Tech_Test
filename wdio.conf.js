@@ -104,17 +104,9 @@ exports.config = {
    */
   before: function (capabilities, specs) {
     const chai = require('chai')
-    const chaiWebdriver = require('chai-webdriverio').default
-    chai.use(chaiWebdriver(browser))
     global.expect = chai.expect
     browser.setWindowSize(1920, 1080)
-  },
-
-  afterScenario: function (uri, feature, scenario, sourceLocation, context) {
-    browser.reloadSession()
-    browser.setWindowSize(1920, 1080)
   }
-
   /**
    * Gets executed after all workers got shut down and the process is about to exit. An error
    * thrown in the onComplete hook will result in the test run failing.

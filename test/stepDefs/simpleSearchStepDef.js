@@ -1,4 +1,4 @@
-const { Given } = require('cucumber')
+const { Given } = require('@cucumber/cucumber')
 const SimpleSearchPageObject = require('../pageObjects/simpleSearchPageObject')
 
 const simpleSearchPageObject = new SimpleSearchPageObject()
