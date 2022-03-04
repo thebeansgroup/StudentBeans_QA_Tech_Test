@@ -29,7 +29,7 @@ The framework has already been set up running asynchronously using a page object
 
 1. Fork the repo
 &emsp;
-2. Create your own branch to make your changes
+2. Create your own branch to make your changes (Ensure your changes are in Javascript as any other language will not be reviewed)
 &emsp;
 3. To run the tests in their current state run the following
     - yarn install
