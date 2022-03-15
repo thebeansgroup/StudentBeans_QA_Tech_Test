@@ -6,6 +6,8 @@ const quickTop20PageObject = new QuickTop20PageObject()
 Given('I am on the studentbeans homepage', function () {
   quickTop20PageObject.goToHomePage()
   quickTop20PageObject.verifyHomePage()
+  quickTop20PageObject.verifyCookieSettings()
+  quickTop20PageObject.clickAcceptAllCookiesButton()
 })
 
 When('I select the "Top 20" button', function (){

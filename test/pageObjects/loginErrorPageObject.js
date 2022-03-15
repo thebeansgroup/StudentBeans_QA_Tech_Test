@@ -18,6 +18,27 @@ class LoginErrorPageObject extends ParentPageObject {
     return $('#onetrust-accept-btn-handler')
   }
 
+  get buttonHomePageLogin() {
+    return $('#Login')
+  }
+
+
+  async clickAcceptAllCookiesButton() {
+    await this.buttonAcceptAllCookies.click()
+    console.log("Cookies Selected")
+  }
+
+  async clickHomePageLoginButton() {
+    await this.buttonHomePageLogin.click()
+    console.log("Cookies Selected")
+  }
+
+
+  async verifyLoginPage() {
+    await this.isElementEqualToExpected($('h3=Welcome Back'), 'Welcome Back')
+    
+  }
+
 
 
   

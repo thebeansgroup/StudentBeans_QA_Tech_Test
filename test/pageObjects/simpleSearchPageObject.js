@@ -22,7 +22,7 @@ class SimpleSearchPageObject extends ParentPageObject {
     return $('[class="_tf5swf"]')
   }
 
-  async clickAcceptAllCookies() {
+  async clickAcceptAllCookiesButton() {
     await this.buttonAcceptAllCookies.click()
     console.log("Cookies Selected")
   }

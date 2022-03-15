@@ -20,8 +20,11 @@ class QuickTop20PageObject extends ParentPageObject {
 
 
 
-  
-  
+  async clickAcceptAllCookiesButton() {
+    await this.buttonAcceptAllCookies.click()
+    console.log("Cookies Selected")
+  }
+
 }
 
 
