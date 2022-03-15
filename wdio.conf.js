@@ -39,7 +39,7 @@ exports.config = {
   // ===================
 
   // Level of logging verbosity: trace | debug | info | warn | error | silent
-  logLevel: 'warn',
+  logLevel: 'debug',
 
   // bail (default is 0 - don't bail, run all tests).
   bail: 0,

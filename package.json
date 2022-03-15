@@ -30,5 +30,9 @@
     "chromedriver": "98.0.1",
     "wdio-chromedriver-service": "7.2.8",
     "webdriverio": "7.16.16"
+  },
+  "dependencies": {
+    "expect": "^27.5.1",
+    "expect-webdriverio": "^3.2.0"
   }
 }
