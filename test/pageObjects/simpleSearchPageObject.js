@@ -41,6 +41,21 @@ class SimpleSearchPageObject extends ParentPageObject {
     await this.fullBar.setValue('Samsung')
     console.log("Samsing in full bar")
   }
+
+  async getFourthOptionInSearch(){
+    const fullSearchResult = $$("//div[@style='float: left; position: relative; width: 50%;']//a[@class='_mtchbu']//span[@class='_14bnlhzi']")
+
+    for (let i = 0; i < fullSearchResult.length; i++){
+      const text = await fullSearchResult[i].getText()
+
+      if(text.includes("delivery"))
+      {
+        await fullSearchResult.click()
+      }
+
+    }
+
+  }
   
 
 

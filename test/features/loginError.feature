@@ -1,6 +1,5 @@
-Feature: Simple Search
+Feature: Login Error
 
-@ignore
 Scenario: As a user I want to observe an error message when invalid login credentials are used on the login page
   Given I am on the studentbeans login page
   And I have entered invalid login credentials

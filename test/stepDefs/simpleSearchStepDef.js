@@ -10,12 +10,13 @@ Given('I am on the studentbeans homepage', function () {
 })
 
 When('I open the search bar', function (){
-})
-
-When('I enter "Samsung"', function (){
   simpleSearchPageObject.clickSearchButton()
 })
 
-Then('I should select the 4th "Samsung" search listing', function (){
+When('I enter "Samsung"', function (){
   simpleSearchPageObject.setSamsungInFullBar()
+})
+
+Then('I should select the 4th "Samsung" search listing', function (){
+  simpleSearchPageObject.getFourthOptionInSearch()
 })
