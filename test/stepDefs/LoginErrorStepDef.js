@@ -12,12 +12,16 @@ Given('I am on the studentbeans login page', function () {
 })
 
 When('I have entered invalid login credentials', function (){
-  // simpleSearchPageObject.verifyCookieSettings()
+  loginErrorPageObject.verifyLoginPage()
+  loginErrorPageObject.setEmailAddress()
+  loginErrorPageObject.setPassword() 
 })
 
 When('I select the "Log in" button', function (){
+  loginErrorPageObject.clickRobotVerification()
+  loginErrorPageObject.clickEmailLoginButton()
 })
 
-Then('I should observe error message', function (){
-  loginErrorPageObject.verifyLoginPage()
+Then('I should observe an error message', function (){
+  loginErrorPageObject.verifyLoginError()
 })

@@ -10,7 +10,6 @@ Given('I am on the studentbeans homepage', function () {
 })
 
 When('I open the search bar', function (){
-  // simpleSearchPageObject.verifyCookieSettings()
 })
 
 When('I enter "Samsung"', function (){
@@ -18,5 +17,5 @@ When('I enter "Samsung"', function (){
 })
 
 Then('I should select the 4th "Samsung" search listing', function (){
-  simpleSearchPageObject.searchSamsung()
+  simpleSearchPageObject.setSamsungInFullBar()
 })

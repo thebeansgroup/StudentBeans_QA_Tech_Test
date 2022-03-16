@@ -22,44 +22,26 @@ class SimpleSearchPageObject extends ParentPageObject {
     return $('[class="_tf5swf"]')
   }
 
+  get fullBar(){
+    return $('[class="_1g5dvk1"]')
+  }
+
   async clickAcceptAllCookiesButton() {
     await this.buttonAcceptAllCookies.click()
     console.log("Cookies Selected")
   }
 
   async clickSearchButton() {
-    const search = await $('[class="_tf5swf"]')
-    await search.click()
+    await this.searchBar.click()
     console.log("Search Bar Selected")
-    browser.pause(5000)
-    const el = await $('[class="_1g5dvk1"]')
-    await el.setValue('Samsung')
-    console.log("Samsung")
+  }
+
+  async setSamsungInFullBar() {
+    await this.fullBar.scrollIntoView()
+    await this.fullBar.setValue('Samsung')
+    console.log("Samsing in full bar")
   }
   
-  // async searchSamsung(){
-  //   browser.pause(5000)
-
-  //   const fullBar = await $('[class="_1g5dvk1"]')
-
-  //   await fullBar.scrollIntoView()
-	
-	//   await fullBar.setValue("Samsung")
-
-  //   browser.pause(5000)
-
-  //   await browser.debug()
-  // }
-
-  async searchSamsung (){
-    const el = await $('[class="_1g5dvk1"]')
-    let clickable = await el.isClickable();
-    console.log(clickable); // outputs: true or false
-
-    // wait for element to be clickable
-    await browser.waitUntil(() => el.isClickable())
-    //await el.setValue("Samsung")
-  }
 
 
   

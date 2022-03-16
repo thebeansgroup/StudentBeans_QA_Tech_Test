@@ -19,29 +19,58 @@ class LoginErrorPageObject extends ParentPageObject {
   }
 
   get buttonHomePageLogin() {
-    return $('#Login')
+    return $("//button[text()='Login']")
+  }
+
+  get fieldEmailAddress() {
+    return $("//input[@id='email']")
+  }
+
+  get fieldPassword() {
+    return $("//input[@id='email']")
+  }
+
+  get buttonRobotVerification() {
+    return $("//span[@role='checkbox']")
+  }
+
+  get buttonEmailLogin() {
+    return $("//button[span='Log in']")
   }
 
 
   async clickAcceptAllCookiesButton() {
     await this.buttonAcceptAllCookies.click()
-    console.log("Cookies Selected")
   }
 
   async clickHomePageLoginButton() {
     await this.buttonHomePageLogin.click()
-    console.log("Cookies Selected")
   }
-
 
   async verifyLoginPage() {
     await this.isElementEqualToExpected($('h3=Welcome Back'), 'Welcome Back')
-    
   }
 
+  async setEmailAddress() {
+    await this.fieldEmailAddress.setValue('test@test.com')
+  }
 
+  async setPassword() {
+    await this.fieldPassword.setValue('testingStuff')
+  }
 
-  
+  async clickRobotVerification() {
+    await this.buttonRobotVerification.click()
+  }
+
+  async clickEmailLoginButton() {
+    await this.buttonEmailLogin.click()
+  }
+
+  async verifyLoginError() {
+    await this.isElementEqualToExpected($("//p[@class='css-1n7jhhc']"), 'The password you entered is incorrect. Please try again.')
+  }
+
   
 }
 
