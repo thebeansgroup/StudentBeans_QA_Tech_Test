@@ -18,5 +18,5 @@ When('I enter "Samsung"', function (){
 })
 
 Then('I should select the 4th "Samsung" search listing', function (){
-  simpleSearchPageObject.getFourthOptionInSearch()
+  simpleSearchPageObject.clickFourthOptionInSearch()
 })

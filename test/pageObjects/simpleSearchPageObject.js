@@ -42,7 +42,7 @@ class SimpleSearchPageObject extends ParentPageObject {
     console.log("Samsing in full bar")
   }
 
-  async getFourthOptionInSearch(){
+  async clickFourthOptionInSearch(){
     const fullSearchResult = $$("//div[@style='float: left; position: relative; width: 50%;']//a[@class='_mtchbu']//span[@class='_14bnlhzi']")
 
     for (let i = 0; i < fullSearchResult.length; i++){
@@ -51,6 +51,7 @@ class SimpleSearchPageObject extends ParentPageObject {
       if(text.includes("delivery"))
       {
         await fullSearchResult.click()
+        break
       }
 
     }

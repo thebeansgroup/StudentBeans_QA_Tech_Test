@@ -25,6 +25,37 @@ class QuickTop20PageObject extends ParentPageObject {
     console.log("Cookies Selected")
   }
 
+  async clickTop20HomePage(){
+    const navigationOptions = $$("//div[@class='_1whzvnz']//li[@style='display: inline-block;']//span[@style='display: inline-block; position: relative; padding: 0px 0.5em;']")
+
+    for (let i = 0; i < navigationOptions.length; i++){
+      const text = await navigationOptions[i].getText()
+
+      if(text.includes("Top"))
+      {
+        await navigationOptions.click()
+        break
+      }
+    }
+  }
+
+  async clickMcDonaldsLink(){
+    const navigationOptions = $$("//div[@style='float: left; position: relative; width: 33.3333%; padding-left: 10px; padding-right: 10px;']//h4[@itemprop='name']")
+
+    for (let i = 0; i < navigationOptions.length; i++){
+      const text = await navigationOptions[i].getText()
+
+      if(text.includes("Cheeseburger"))
+      {
+        await navigationOptions.click()
+        break
+      }
+    }
+  }
+
+  async verifyMcDonaldsDiscountPage () {
+    await this.isElementEqualToExpected($('[class="_1glzvfh"]'), 'Free Cheeseburger, Mayo Chicken or McFlurry® Original')
+  }
 }
 
 
