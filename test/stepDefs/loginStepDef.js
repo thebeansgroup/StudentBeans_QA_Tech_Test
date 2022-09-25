@@ -1,6 +1,6 @@
-const { Given, When, Then } = require('@cucumber/cucumber')
+const { Given, When, Then } = require('@cucumber/cucumber');
 const LoginPageObject = require('../pageObjects/loginPageObject')
-const { assert } = require('chai')
+
 
 const loginPageObject = new LoginPageObject()
 
@@ -13,9 +13,5 @@ When(/^I login with ([^"]*) and ([^"]*)$/, async (email, password) => {
 });
 
 Then(/^I should see an error message saying ([^"]*)$/, async (message) => {
-    assert(await expect(await loginPageObject.errorMessage.getText()).to.equal(message), "This is not expected behavior")
+    await loginPageObject.verifyErrorMessage(message)
 });
-
-
-
-

@@ -36,13 +36,13 @@ class SimpleSearchPageObject extends ParentPageObject {
 
   async searchByBrand(brand) {
     await this.searchInput.setValue(brand);
-    await browser.pause(2000)
+    await browser.pause(1000);
   }
 
   async selectFourthListing(brand) {
     await this.fourthResult.click();
-    await browser.pause(2000)
   }
 }
 
 module.exports = SimpleSearchPageObject
+

@@ -34,12 +34,16 @@ class LoginPageObject extends ParentPageObject {
         await this.inputEmail.setValue(email);
         await this.inputPassword.setValue(password);
         await this.verifyCaptcha();
-        await browser.pause(10000)
         await this.loginButton.click();
     }
 
     get errorMessage() {
         return $('.css-1n7jhhc')
+    }
+
+    async verifyErrorMessage(message) {
+        const errorMessage = await this.errorMessage.getText();
+        await expect(errorMessage).to.equal(message);
     }
 }
 module.exports = LoginPageObject

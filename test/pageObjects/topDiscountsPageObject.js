@@ -16,7 +16,6 @@ class TopDiscountsPageObject extends ParentPageObject {
 
     async clickTile() {
         await this.sixthDiscount.click();
-        await browser.pause(2000)
     }
 }
 
