@@ -24,9 +24,7 @@ class SimpleSearchPageObject extends ParentPageObject {
 
   get fourthResult() {
     return $$('[data-testid="search-result-offer"]')[3]
-
   }
-
 
   async clickAcceptCookiesButton() {
     await this.buttonAcceptCookies.click();
@@ -45,7 +43,6 @@ class SimpleSearchPageObject extends ParentPageObject {
     await this.fourthResult.click();
     await browser.pause(2000)
   }
-
 }
 
 module.exports = SimpleSearchPageObject

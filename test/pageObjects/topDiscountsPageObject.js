@@ -1,11 +1,23 @@
 const ParentPageObject = require('./parentPageObject')
 
-class topDiscountsPageObject extends ParentPageObject {
-    async goToHomePage() {
-        // the below url call is relative to the base url in the wdio.conf.js so the below call will actually just result in going straight to the base url
-        await browser.url('')
+class TopDiscountsPageObject extends ParentPageObject {
+
+    get top20NavItem() {
+        return $('[data-testid="nav-category-top-20-student-discounts"]');
     }
 
-    async verifyHomePage() {
-        await this.isElementEqualToExpected($('h2=Recommended For You'), 'Recommended For You')
+    get sixthDiscount() {
+        return $$('[data-testid="offer-image-container"]')[5]
     }
+
+    async clickNavItem() {
+        await this.top20NavItem.click();
+    }
+
+    async clickTile() {
+        await this.sixthDiscount.click();
+        await browser.pause(2000)
+    }
+}
+
+module.exports = TopDiscountsPageObject
