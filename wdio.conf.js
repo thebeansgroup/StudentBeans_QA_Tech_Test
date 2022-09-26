@@ -11,6 +11,7 @@ exports.config = {
   // ==================
   specs: ['test/features/**/*.feature'],
   exclude: [],
+  specFileRetries: 2, //add retries to determine which tests are flaky
   //
   // ============
   // Capabilities
@@ -21,7 +22,7 @@ exports.config = {
 
   capabilities: [
     {
-      maxInstances: 1,
+      maxInstances: 1, //having too many workers seems to break the tests
       browserName: 'chrome',
       'goog:chromeOptions': {
         // to run chrome headless the following flags are required
