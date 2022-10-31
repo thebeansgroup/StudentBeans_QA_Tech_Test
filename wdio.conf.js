@@ -28,8 +28,7 @@ exports.config = {
         // (see https://developers.google.com/web/updates/2017/04/headless-chrome)
         args: [
           '--no-sandbox',
-          '--disable-dev-shm-usage',
-          '--remote-debugging-port=9222'
+          '--disable-dev-shm-usage'
         ]
       }
     }
