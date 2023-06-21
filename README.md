@@ -15,8 +15,8 @@ The framework has already been set up running asynchronously using a page object
 &emsp;
 4. Go to <https://www.studentbeans.com/uk> and write your own test in the cucumber format that does the following
     - Opens the website
-    - Takes the user to the Top 20 offers
-    - Open the 6th discount within the Top 20 offers list
+    - Takes the user to the Trending Now offers
+    - Open the 6th discount within the Trending Now offers list
 5. Write one last scenario, A scenario outline that goes to <https://www.studentbeans.com/uk> and does the following
     - Open the log in function
     - Use the credentials email: test@test.com password: testingStuff
