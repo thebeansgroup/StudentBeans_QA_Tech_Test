@@ -25,6 +25,12 @@ The framework has already been set up running asynchronously using a page object
 
 **Please write your scenarios in your own appropriately named feature files and create all the needed stepdefs and pageobjects**
 
+***Before submitting your solution please consider the following:***
+- The solution needs to be able to execute the tests and have them pass
+- Focus on attention to detail - we are looking to see how polished and confident you are in the basics before you show flair, with solid code structure and quality.
+- Ensure your solutions are clean and easy to follow/read with a clear thought process/logic
+- Take careful note of the instructions provided and show us what you can do!
+
 ### Steps to get started
 
 1. Fork the repo
