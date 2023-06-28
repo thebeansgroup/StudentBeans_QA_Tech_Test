@@ -9,6 +9,31 @@ class SimpleSearchPageObject extends ParentPageObject {
   async verifyHomePage () {
     await this.isElementEqualToExpected($('h2=Recommended For You'), 'Recommended For You')
   }
+
+  async openSearchBar() {
+    const searchBar = await driver.findElement(By.id('search-bar'));
+    await searchBar.click();
+  }
+
+  async enterSearchTerm(searchTerm) {
+    const searchBarInput = await driver.findElement(By.id('search-input'));
+    await searchBarInput.clear();
+    await searchBarInput.sendKeys(searchTerm);
+  }
+
+  async selectSearchListing(listingIndex, searchTerm) {
+    const searchListings = await driver.findElements(By.className('search-listing'));
+    const selectedListing = searchListings[listingIndex - 1];
+    const listingTitle = await selectedListing.findElement(By.className('listing-title')).getText();
+
+    if (listingTitle.toLowerCase() === searchTerm.toLowerCase()) {
+      await selectedListing.click();
+      return selectedListing;
+    } else {
+      throw new Error(`No matching search listing found for "${searchTerm}" at index ${listingIndex}`);
+    }
+  }
 }
+
 
 module.exports = SimpleSearchPageObject
