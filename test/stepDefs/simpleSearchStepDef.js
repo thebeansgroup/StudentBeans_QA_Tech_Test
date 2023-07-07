@@ -1,6 +1,5 @@
 const { Given, Then, When } = require('@cucumber/cucumber')
-const SimpleSearchPageObject = require('../pageObjects/simpleSearchPageObject');
-const { assert } = require('chai');
+const SimpleSearchPageObject = require('../pageObjects/simpleSearchPageObject')
 
 const simpleSearchPageObject = new SimpleSearchPageObject()
 

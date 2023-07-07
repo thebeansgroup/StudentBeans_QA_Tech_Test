@@ -1,4 +1,3 @@
-const { expect } = require('chai')
 const ParentPageObject = require('./parentPageObject')
 
 class SimpleSearchPageObject extends ParentPageObject {
