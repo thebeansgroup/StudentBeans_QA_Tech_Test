@@ -5,4 +5,3 @@ Scenario: As a user I want to search for a brand on studentbeans.com so that I c
   And I open the search bar
   When I enter "Samsung"
   Then I should select the 4th "Samsung" search listing
-
