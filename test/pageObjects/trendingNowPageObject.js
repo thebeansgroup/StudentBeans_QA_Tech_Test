@@ -7,7 +7,7 @@ class TrendingNowPageObject extends ParentPageObject {
   }
 
   async selectTrendingNowLink() {
-    this.acceptCookie();
+    this.acceptCookie();//accept cookie if visible
     const trendingNowLink = $("[data-testid='nav-category-trending-now']");
     await trendingNowLink.click();
   }
@@ -15,18 +15,21 @@ class TrendingNowPageObject extends ParentPageObject {
   async selectTendingNowOffer(itemIndex) {
     const offerList = $$("[data-testid='offer-image-container'] img");
     const selectedOffer = offerList[itemIndex - 1];
+    const getImageUrl = selectedOffer.getAttribute('src'); //Get the image url
+    
     if(selectedOffer != null)
     {
       selectedOffer.click();
-      return selectedOffer;
+      return getImageUrl;
     }else{
       throw new console.error('No offer found at index ${itemIndex}');
     }
   }
 
   async getSelectedOffer(){
-    const selecterOffer = $("[itemprop='offers'][data-offer-selected='true']");
-    return selecterOffer;
+    const selectedOffer = $$("[itemprop='offers'][data-offer-selected='true'] img");
+    const getImageUrl = selectedOffer[0].getAttribute('src'); //Get the image url
+    return getImageUrl;
   }
 }
 

@@ -29,15 +29,16 @@ class LoginPageObject extends ParentPageObject {
   }
 
   async clickLoginButton() {
-    const login = $("//*[text()='Log in']");
+    const login = $$("//*[text()='Log in']");
     return login;
   }
 
   async enterLoginDetails(email, password) {
-    await this.inputEmail(email);
-    await this.inputPassword(password);
     await this.acceptCaptcha();
-    await this.clickLoginButton.click();
+    await browser.switchToFrame(null);
+    await this.inputEmail(email);
+    await this.inputPassword(password);    
+    await this.clickLoginButton[1].click();
   }
 
   async verifyInvalidPasswordError() {
