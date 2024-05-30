@@ -18,9 +18,10 @@ The framework has already been set up running asynchronously using a page object
     - Takes the user to the Trending Now offers
     - Open the 6th discount within the Trending Now offers list
 5. Write one last scenario, A scenario outline that goes to <https://www.studentbeans.com/uk> and does the following
-    - Open the log in function
-    - Use the credentials email: test@test.com password: testingStuff
-    - Trigger the user and password error messages
+    - Open the register function
+    - Trigger the email and password error messages
+      - Email field can be triggered by using an invalid email like: 'test.com'
+      - Password field can be triggered by using a password with less than 4 characters
     - Confirm that the error messages display &emsp;
 
 **Please write your scenarios in your own appropriately named feature files and create all the needed stepdefs and pageobjects**
