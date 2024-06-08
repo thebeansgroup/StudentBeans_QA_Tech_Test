@@ -9,10 +9,16 @@ Given('I am on the studentbeans homepage', async () => {
 })
 When(`I click {string} on Simple Search Page`,async(element) =>{
   await simpleSearchPageObject.clickElement(element)
+  browser.pause(5000)
+  console.log('xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx');
+  await simpleSearchPageObject.waitsecond(1000);
 })
 
-When(`I set {string} with {string}`, async (element,textValue) =>{
-await simpleSearchPageObject.setElementValue(element,textValue)
+When(`I set {string} with {string} on Simple Search Page`, async (elementName,textValue) =>{
+  console.log('gellldioooooooooooooooooooooooooooooooooooo')
+  await browser.pause(5000)
+
+ await simpleSearchPageObject.setElementValue(elementName,textValue)
 });
 
 When(`I wait`, async () =>{
