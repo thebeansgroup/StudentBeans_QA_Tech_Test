@@ -23,10 +23,10 @@ class RegisterPageObject extends ParentPageObject{
         return text;
       } 
 
-        async clickElement(elementName) {
-          const webElement = $(this.getSelector(elementName));
-          await webElement.waitForClickable({ timeout: 5000 }); // Wait for 5 seconds
-          await webElement.click();
+      async clickElement(elementName) {
+        const webElement = $(this.getSelector(elementName));
+        await webElement.waitForClickable({ timeout: 5000 }); // Wait for 5 seconds
+        await webElement.click();
       }
 
         async hoverOverElement(elementName) {
@@ -37,7 +37,7 @@ class RegisterPageObject extends ParentPageObject{
        async scrollToElement(elementName) {
         const webElement = await $(this.getSelector(elementName));
         await webElement.scrollIntoView();
-       }
+      }
     
     
 }

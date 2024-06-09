@@ -104,8 +104,19 @@ exports.config = {
   before: function (capabilities, specs) {
     const chai = require('chai')
     global.expect = chai.expect
-    browser.setWindowSize(1920, 1080)
-  }
+    global.isFirstScenario = true;
+    browser.setWindowSize(1920, 1080) 
+  },
+  beforeScenario: async function () {
+     // If it's not the first scenario, start a new browser session
+     if (!global.isFirstScenario) {
+      await browser.reloadSession();
+      await browser.setWindowSize(1920, 1080)  
+    }
+    // Set isFirstScenario to false after the first scenario
+    global.isFirstScenario = false;
+   
+  },
   /**
    * Gets executed after all workers got shut down and the process is about to exit. An error
    * thrown in the onComplete hook will result in the test run failing.

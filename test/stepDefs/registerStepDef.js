@@ -5,6 +5,8 @@ const { expect } = require('chai');
 
 const registerPageObject = new RegisterPageObject();
 
+
+
 When(`I set {string} with {string}`, async (elementName,textValue) =>{
     await registerPageObject.setElementValue(elementName,textValue)
     });
@@ -19,4 +21,4 @@ When(`I move on to {string} on Register Page`,async(elementName) =>{
       
       
 
-      
+  
