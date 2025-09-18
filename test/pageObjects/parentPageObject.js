@@ -1,10 +1,10 @@
 const { assert } = require('chai')
 
-class ParentPageObject {
-  async isElementEqualToExpected (element, expectedText) {
-    const rrorMessage = 'Actual does not match expected'
-    assert(await expect(await element.getText(), errorMessage).to.equal(expectedText))
+export default class ParentPageObject {
+  async isElementEqualToExpected(element, expectedText) {
+    const elementText = await element.getText()
+    if (elementText !== xpectedText) {
+      throw new Error(`Expected text "${expectedText}" but found "${elementText}"`)
+    }
   }
 }
-
-module.exports = ParentPageObject
