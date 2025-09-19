@@ -1,9 +1,10 @@
 {
   "name": "automationtests",
   "version": "1.0.0",
-  "description": "",
+  "description": "The framework has already been set up running asynchronously using a page object model(POM) with a parent page object that other page objects inherit from, this is representative of the set up we use in our tests within Student Beans",
   "scripts": {
-    "tests": "wdio ./wdio.conf.js"
+    "tests": "wdio ./wdio.conf.js",
+    "tests2": "wdio ./wdio.conf.js --spec ./test/stepDefs/trendingBrowseStepDef.js"
   },
   "keywords": [],
   "author": "",
@@ -30,5 +31,18 @@
     "chromedriver": "140.0.1",
     "wdio-chromedriver-service": "8.1.1",
     "webdriverio": "9.19.2"
-  }
+  },
+  "main": "wdio.conf.js",
+  "directories": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/O-Bots/Ow-StudentBeans_QA_Tech_Test.git"
+  },
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/O-Bots/Ow-StudentBeans_QA_Tech_Test/issues"
+  },
+  "homepage": "https://github.com/O-Bots/Ow-StudentBeans_QA_Tech_Test#readme"
 }
